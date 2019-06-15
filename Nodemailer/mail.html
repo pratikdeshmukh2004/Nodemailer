@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ONLINE MAIL</title>
+	<link rel="icon" type="image/jpg" href="https://cdn3.iconfinder.com/data/icons/google-suits/32/16_gmail_email_mail_communication_message_service-512.png">
+<style type="text/css">
+	.header{
+		padding: 1px;
+		background-color: red;
+		width: 100.8%;
+		margin: -12px -8px 0px -8px;
+		text-align: center;
+		color: white;
+	}
+	.table{
+		border: 2px solid red;
+		margin: 30px 23%;
+		padding: 20px;
+		padding-left: 100px;
+		background-color: black;
+		color: white;
+		text-shadow: 3px 3px 5px red;
+		opacity: 0.9;
+
+	}
+	input{
+		margin-bottom: 20px;
+		margin-left: 30px;
+	}
+	input[type = "email"]{
+		width: 500px;
+		height: 30px;
+	}
+	input[type = "password"]{
+		width: 490px;
+		height: 30px;
+	}
+	input[type = "text"]{
+		width: 500px;
+		height: 50px;
+	}
+	textarea{
+		width: 500px;
+		height: 150px;
+		margin-left: 30px;
+	}
+	input[type="submit"]{
+		width: 400px;
+		height: 50px;
+		color: black;
+		font-size: 20px;
+		background-color: red;
+		border-color: red;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	c{
+		color: red;
+	}
+@media screen and (max-width: 1700px){
+	.table{
+		margin: 5px 20%;
+		padding-left: 30px;
+
+	}
+	textarea{
+		width: 500px;
+		height: 100px;
+	}
+}
+@media screen and (max-width: 990px){
+	.table{
+		margin: 20px 0px;
+
+	}
+	input{
+		margin-bottom: 50px;
+	}
+	.header{
+		padding: 15px;
+		font-size: 30px;
+	}
+	h2{
+		font-size: 70px;
+	}
+	input[type = "email"]{
+		width: 90%;
+		height: 80px;
+		font-size: 40px;
+	}
+	input[type = "password"]{
+		width: 100%;
+		height: 80px;
+		font-size: 40px;
+
+	}
+	input[type = "text"]{
+		width: 90%;
+		height: 100px;
+		font-size: 40px;
+
+	}
+	textarea{
+		width: 95%;
+		height: 250px;
+		margin-left: 30px;
+		font-size: 50px;
+	}
+	input[type="submit"]{
+		width: 90%;
+		height: 150px;
+		color: black;
+		font-size: 90px;
+		margin-top: 20px;
+	}
+}
+</style>
+</head>
+<body bgcolor="#cccccc">
+<div class="header">
+	<h1>PMAIL</h1>
+</div>
+<div>
+<form class="table" action="mail" method="POST">
+	<h2><c>✔ </c>  Your Email : </h2><input type="email" name="email" placeholder="Your Email...">
+	<h2><c>✔ </c>  Your Password : </h2><input type="password" name="password" placeholder="Your Password...">
+	<h2><c>✔ </c>  Send To : </h2><input type="email" name="emailid" placeholder="Send to">
+	<h2><c>✔ </c>  Subject : </h2><input type="text" name="sub" placeholder="Subject...">
+	<h2><c>✔ </c>  Body : </h2><textarea name="text" placeholder="Text..."></textarea><br><br>
+	<input onclick="al()" type="submit" value="Send">
+</form>
+<script>
+function al(){
+	alert("Mail sending successfully...")
+}
+</script>
+</div>
+</body>
+</html>
